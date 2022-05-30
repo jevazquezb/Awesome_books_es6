@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+  }
+  
+  header {
+    margin: 1rem 1rem 1.3rem 1rem;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    border: 2px solid #000;
+    padding: 0.5rem 0.5rem 0.5rem 1.7rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menu-item {
+    padding: 0.5rem 1rem;
+  }
+  
+  .menu .menu-item:nth-child(2) {
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+  
+  .link-item {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .visited {
+    color: #3c99dc;;
+  }
+  
+  .date-item {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    float: right;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem 5.5rem 1rem;
+    overflow-y: auto;
+  }
+  
+  .book-list {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+  }
+  
+  .list-cont {
+    display: block;
+    border: 2px solid #000;
+    align-self: stretch;
+    border-radius: 3px;
+  }
+  
+  .list-cont div:nth-child(odd) {
+    background-color: #b8b8b8;
+  }
+  
+  .book-cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    font-size: 0.5rem;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .book-info {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .rmbtn {
+    box-shadow: 4px 5px #000;
+    border: 1px solid #000;
+    font-size: 1rem;
+  }
+  
+  .rmbtn:hover {
+    cursor: pointer;
+  }
+  
+  .form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+  }
+  
+  .title-marg {
+    margin: 0 0 4rem 0;
+  }
+  
+  .input-box {
+    align-self: stretch;
+    border: 2px solid #000;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
+  
+  .add-btn {
+    align-self: end;
+    box-shadow: 4px 5px #000;
+    border: 1px solid #000;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .add-btn:hover {
+    cursor: pointer;
+  }
+  
+  .contact {
+    align-self: stretch;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-cont {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  
+  .contact-list {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    list-style: disc;
+  }
+  
+  .display {
+    display: flex;
+  }
+  
+  .footer {
+    margin: 1rem;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;  
+    border: 2px solid #000;
+    padding: 1rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #fff;
+  }  
