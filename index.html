@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>    
+    <link rel="stylesheet" href="reset.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all"/>   
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">Awesome Books</h2>
+            <ul class="menu">
+                <li class="menu-item"><a href="#" id="disp-list" class="link-item">List</a></li>
+                <li class="menu-item"><a href="#" id="disp-form" class="link-item">Add New</a></li>
+                <li class="menu-item"><a href="#" id="disp-contact" class="link-item">Contact</a></li>
+            </ul>
+        </nav>
+        <span class="date-item">May 30th 2022</span>        
+    </header>
+    
+    <main>
+        <section class="book-list">
+            <h1 class="main-title">All awesome books</h1>
+            <div class="list-cont"></div>
+        </section>
+
+        <section class="form">
+            <h1 class="main-title title-marg">Add a new book</h1>
+            <input class="input-box" type="text" id="name" placeholder="Title" required>
+            <input class="input-box" type="text" id="author" placeholder="Author" required>
+            <button class="add-btn" type="submit" id="add">Add</button>
+        </section>
+
+        <section class="contact">
+            <h1 class="main-title title-marg">Contact Information</h1>
+            <div class="contact-cont">
+                <P>Do you have any questions or you just want to say "Hello"?</P>
+                <p>You can reach out to us:</p>
+                <ul class="contact-list">
+                <li>Our email: mail@mail.com</li>
+                <li>Our Phone Number : 0043586534422</li>
+                <li>Our Address: Streetname 22, 84503 City,Country</li>
+                </ul>
+            </div>   
+        </section>
+    </main>
+
+    <footer class="footer">
+        Copyright...
+    </footer>
+    
+    <script src="index.js"></script>
+</body>  
+</html>
