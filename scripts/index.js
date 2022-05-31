@@ -1,8 +1,7 @@
-export { bookName, bookAuthor, bookContainer };
 import BookManager from './modules/book_manager.js';
 import resetInput from './modules/reset_input.js';
 import storageAvailable from './modules/storage_available.js';
-import { DateTime } from "./modules/luxon.js";
+import { DateTime } from './modules/luxon.js';
 
 // Book list container
 const bookContainer = document.querySelector('.list-cont');
@@ -50,7 +49,7 @@ const displaySection = (e) => {
     form.classList.remove('display');
     contact.classList.add('display');
   }
-}
+};
 
 menuBtns.forEach((btn) => {
   btn.addEventListener('click', displaySection);
@@ -75,12 +74,12 @@ if (storageAvailable('localStorage')) {
     library.getBooks();
     const bookId = library.addBook(bookName.value, bookAuthor.value);
     library.saveBooks();
-    library.displayBook(bookName.value, bookAuthor.value, bookId);  
-    resetInput();    
+    library.displayBook(bookName.value, bookAuthor.value, bookId);
+    resetInput();
   });
 }
 
-//Adding date
+// Adding date
 setInterval(() => {
   dateContainer.textContent = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}`;
 }, 1000);

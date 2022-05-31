@@ -1,7 +1,5 @@
 // Extracted function from lesson
-export { storageAvailable as default };
-
-const storageAvailable = type => {
+const storageAvailable = (type) => {
   let storage;
   try {
     storage = window[type];
@@ -27,3 +25,5 @@ const storageAvailable = type => {
     );
   }
 };
+
+export { storageAvailable as default };

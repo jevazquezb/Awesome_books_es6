@@ -1,7 +1,9 @@
-import { bookName, bookAuthor } from '../index.js';
-export { resetInput as default };
+const bookName = document.getElementById('name');
+const bookAuthor = document.getElementById('author');
 
 const resetInput = () => {
   bookName.value = '';
   bookAuthor.value = '';
 };
+
+export { resetInput as default };
