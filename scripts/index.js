@@ -1,7 +1,8 @@
-export {bookName, bookAuthor, bookContainer};
+export { bookName, bookAuthor, bookContainer };
 import BookManager from './modules/book_manager.js';
 import resetInput from './modules/reset_input.js';
 import storageAvailable from './modules/storage_available.js';
+import { DateTime } from "./modules/luxon.js";
 
 // Book list container
 const bookContainer = document.querySelector('.list-cont');
@@ -20,6 +21,8 @@ const dispContact = document.querySelector('#disp-contact');
 const booksSection = document.querySelector('.book-list');
 const form = document.querySelector('.form');
 const contact = document.querySelector('.contact');
+// Date
+const dateContainer = document.querySelector('.date');
 
 // Book manager call
 const library = new BookManager();
@@ -77,5 +80,7 @@ if (storageAvailable('localStorage')) {
   });
 }
 
-// Adding date
-
+//Adding date
+setInterval(() => {
+  dateContainer.textContent = `${DateTime.now().toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}`;
+}, 1000);
