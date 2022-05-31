@@ -8,35 +8,35 @@
     <link rel="stylesheet" href="./styles/reset.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="./styles/index.css" type="text/css" media="all"/>   
 </head>
-<body>
+<body class="d-flex f-direction">
     <header>
-        <nav>
+        <nav class="d-flex a-items border-2">
             <h2 class="logo">Awesome Books</h2>
-            <ul class="menu">
-                <li class="menu-item"><a href="#" id="disp-list" class="link-item">List</a></li>
-                <li class="menu-item"><a href="#" id="disp-form" class="link-item">Add New</a></li>
-                <li class="menu-item"><a href="#" id="disp-contact" class="link-item">Contact</a></li>
+            <ul class="d-flex">
+                <li class="menu-item"><a href="#" id="disp-list" class="logo link-item">List</a></li>
+                <li class="menu-item"><a href="#" id="disp-form" class=" logo link-item">Add New</a></li>
+                <li class="menu-item"><a href="#" id="disp-contact" class="logo link-item">Contact</a></li>
             </ul>
         </nav>
         <span class="date"></span>        
     </header>
     
-    <main>
-        <section class="book-list">
+    <main class="d-flex direction-align">
+        <section class="book-list d-none direction-align">
             <h1 class="main-title">All awesome books</h1>
-            <div class="list-cont"></div>
+            <div class="list-cont a-self border-2"></div>
         </section>
 
-        <section class="form">
+        <section class="form d-flex direction-align">
             <h1 class="main-title title-marg">Add a new book</h1>
-            <input class="input-box" type="text" id="name" placeholder="Title" required>
-            <input class="input-box" type="text" id="author" placeholder="Author" required>
-            <button class="add-btn" type="submit" id="add">Add</button>
+            <input class="input-box a-self border-2" type="text" id="name" placeholder="Title" required>
+            <input class="input-box a-self" type="text" id="author" placeholder="Author" required>
+            <button class="rmbtn add-btn" type="submit" id="add">Add</button>
         </section>
 
-        <section class="contact">
+        <section id="contact" class="d-none direction-align">
             <h1 class="main-title title-marg">Contact Information</h1>
-            <div class="contact-cont">
+            <div class="contact-cont a-self">
                 <P>Do you have any questions or you just want to say "Hello"?</P>
                 <p>You can reach out to us:</p>
                 <ul class="contact-list">
@@ -48,7 +48,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="logo border-2 footer">
         Copyright...
     </footer>
     

@@ -19,7 +19,7 @@ const dispContact = document.querySelector('#disp-contact');
 // Sections
 const booksSection = document.querySelector('.book-list');
 const form = document.querySelector('.form');
-const contact = document.querySelector('.contact');
+const contact = document.querySelector('#contact');
 // Date
 const dateContainer = document.querySelector('.date');
 
@@ -31,23 +31,23 @@ const displaySection = (e) => {
     dispList.classList.add('visited');
     dispForm.classList.remove('visited');
     dispContact.classList.remove('visited');
-    booksSection.classList.add('display');
-    form.classList.remove('display');
-    contact.classList.remove('display');
+    booksSection.style.display = 'flex';
+    form.style.display = 'none';
+    contact.style.display = 'none';
   } else if (e.target.id === 'disp-form') {
     dispList.classList.remove('visited');
     dispForm.classList.add('visited');
     dispContact.classList.remove('visited');
-    booksSection.classList.remove('display');
-    form.classList.add('display');
-    contact.classList.remove('display');
+    booksSection.style.display = 'none';
+    form.style.display = 'flex';
+    contact.style.display = 'none';
   } else {
     dispList.classList.remove('visited');
     dispForm.classList.remove('visited');
     dispContact.classList.add('visited');
-    booksSection.classList.remove('display');
-    form.classList.remove('display');
-    contact.classList.add('display');
+    booksSection.style.display = 'none';
+    form.style.display = 'none';
+    contact.style.display = 'flex';
   }
 };
 
@@ -58,7 +58,6 @@ menuBtns.forEach((btn) => {
 if (storageAvailable('localStorage')) {
   window.addEventListener('load', () => {
     dispForm.classList.add('visited');
-    form.classList.add('display');
     books = library.getBooks();
     if (books.length === 0) {
       bookContainer.style.display = 'none';

@@ -42,7 +42,7 @@ const BookManager = class {
   displayBook = (title, author, id) => {
     // Book container
     const bkdiv = document.createElement('div');
-    bkdiv.classList.add('book-cont');
+    bkdiv.classList.add('d-flex', 'book-cont', 'a-items');
 
     // Title of the book
     const bookData = document.createElement('h2');
