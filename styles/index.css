@@ -1,0 +1,167 @@
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.f-direction {
+  flex-direction: column;
+}
+
+.a-items {
+  align-items: center;
+}
+
+.direction-align {
+  flex-direction: column;
+  align-items: center;
+}
+
+.a-self {
+  align-self: stretch;
+}
+
+.border-2 {
+  border: 2px solid #000;
+}
+
+body {
+  align-items: stretch;
+  height: 100vh;
+}
+
+header {
+  margin: 1rem 1rem 1.3rem 1rem;
+}
+
+nav {
+  justify-content: space-between;
+  padding: 0.5rem 0.5rem 0.5rem 1.7rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.menu-item {
+  padding: 0.5rem 1rem;
+}
+
+ul .menu-item:nth-child(2) {
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.link-item {
+  color: #000;
+  text-decoration: none;
+}
+
+.visited {
+  color: #3c99dc;
+}
+
+.date {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  float: right;
+}
+
+main {
+  margin: 0 1rem 5.5rem 1rem;
+  overflow-y: auto;
+}
+
+.book-list {
+  width: 50%;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.list-cont {
+  display: block;
+  border-radius: 3px;
+}
+
+.list-cont div:nth-child(odd) {
+  background-color: #b8b8b8;
+}
+
+.book-cont {
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 0.5rem;
+  box-sizing: border-box;
+}
+
+.book-info {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.rmbtn {
+  box-shadow: 4px 5px #000;
+  border: 1px solid #000;
+  font-size: 1rem;
+}
+
+.rmbtn:hover {
+  cursor: pointer;
+}
+
+.form {
+  width: 30%;
+}
+
+.title-marg {
+  margin: 0 0 4rem 0;
+}
+
+.input-box {
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.4rem;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.add-btn {
+  align-self: end;
+  margin-bottom: 1rem;
+}
+
+.add-btn:hover {
+  cursor: pointer;
+}
+
+.contact {
+  display: none;
+}
+
+.contact-cont {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+}
+
+.contact-list {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  list-style: disc;
+}
+
+.footer {
+  margin: 1rem;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 1.7rem;
+  background-color: #fff;
+}
