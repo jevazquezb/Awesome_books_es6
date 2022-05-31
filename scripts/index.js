@@ -27,7 +27,7 @@ const dateContainer = document.querySelector('.date');
 // Book manager call
 const library = new BookManager();
 
-function displaySection(e) {
+const displaySection = (e) => {
   if (e.target.id === 'disp-list') {
     dispList.classList.add('visited');
     dispForm.classList.remove('visited');

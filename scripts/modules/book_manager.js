@@ -1,28 +1,29 @@
 import Book from './book_class.js';
-import {bookContainer} from '../index.js';
+import { bookContainer } from '../index.js';
+export { BookManager as default };
 
-export default class BookManager {
+const BookManager = class {
   constructor() {
     this.bookList = null;
   }
 
-  getBooks() {
+  getBooks = () => {
     this.bookList = JSON.parse(localStorage.getItem('bookList')) || [];
     return this.bookList;
-  }
+  };
 
-  saveBooks() {
+  saveBooks = () => {
     localStorage.setItem('bookList', JSON.stringify(this.bookList));
-  }
+  };
 
-  addBook(title, author) {
+  addBook = (title, author) => {
     const bookId = Math.random().toString(36).replace(/[^a-z]+/g, '').slice(2, 5);
     const newBook = new Book(title, author, bookId);
     this.bookList.push(newBook);
     return bookId;
-  }
+  };
 
-  removeBook(e) {
+  removeBook = (e) => {
     // Remove from localStorage
     this.bookList = JSON.parse(localStorage.getItem('bookList'));
     const bookId = e.target.id;
@@ -35,9 +36,9 @@ export default class BookManager {
     if (this.bookList.length === 1) {      
       bookContainer.style.display = 'none';
     }
-  }
+  };
 
-  displayBook(title, author, id) {
+  displayBook = (title, author, id) => {
     // Book container
     const bkdiv = document.createElement('div');
     bkdiv.classList.add('book-cont'); 
@@ -57,5 +58,5 @@ export default class BookManager {
     bkdiv.appendChild(rmBtn);  
   
     bookContainer.appendChild(bkdiv);
-  }
-}
+  };
+};

@@ -1,6 +1,7 @@
-import {bookName, bookAuthor} from '../index.js';
+import { bookName, bookAuthor } from '../index.js';
+export { resetInput as default };
 
-export default function resetInput() {
-    bookName.value = '';
-    bookAuthor.value = '';
-  }
+const resetInput = () => {
+  bookName.value = '';
+  bookAuthor.value = '';
+};
